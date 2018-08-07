@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 
-def valid_move(board, index)
+def valid_move?(board, index)
 
   new_index = index.to_i - 1
 
@@ -10,7 +10,7 @@ def valid_move(board, index)
     within_index = false
   end
 
-  if position_taken(board, new_index) == true
+  if position_taken?(board, new_index) == true
     occupied = true
   else
     occupied = false
@@ -31,7 +31,7 @@ def valid_move(board, index)
 end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-def position_taken(board, new_index)
+def position_taken?(board, new_index)
   if boad[new_index] == "X" || "O"
     return true
   else

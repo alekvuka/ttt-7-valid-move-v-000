@@ -32,4 +32,3 @@ def position_taken?(board, new_index)
     return false
   end
 end
-

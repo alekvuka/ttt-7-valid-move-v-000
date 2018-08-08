@@ -4,7 +4,7 @@ def valid_move?(board, index)
 
   new_index = index.to_i - 1
 
-  if 0 <= new_index && new_index <= 9
+  if 0 <= new_index && new_index <= 8
     within_index = true
   else
     within_index = false

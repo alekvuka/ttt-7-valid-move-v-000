@@ -32,7 +32,7 @@ end
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 def position_taken?(board, new_index)
-  if boad[new_index] == "X" || "O"
+  if board[new_index] == "X" || "O"
     return true
   else
     return false

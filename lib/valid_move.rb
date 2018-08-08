@@ -5,16 +5,24 @@ def valid_move?(board, index)
   new_index = index.to_i - 1
 
   if 0 <= new_index && new_index <= 9
-    return true
+    within_index = true
   else
-    return false
+    within_index = false
   end
 
   if position_taken?(board, new_index) == true
-    return true
+    occupied = true
   else
-    return false
+    ocupied = false
   end
+
+  if within_index == true && occupied == false 
+    return true 
+  else 
+    return false 
+end 
+
+
 
 end
 

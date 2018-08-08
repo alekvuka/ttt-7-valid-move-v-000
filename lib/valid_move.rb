@@ -21,9 +21,7 @@ def valid_move?(board, index)
   else
     return false
   end
-
 end
-
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
 def position_taken?(board, new_index)
@@ -34,3 +32,4 @@ def position_taken?(board, new_index)
     return false
   end
 end
+

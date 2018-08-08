@@ -16,11 +16,11 @@ def valid_move?(board, index)
     ocupied = false
   end
 
-  if within_index == true && occupied == false 
-    return true 
-  else 
-    return false 
-end 
+  if within_index == true && occupied == false
+    return true
+  else
+    return false
+end
 
 
 

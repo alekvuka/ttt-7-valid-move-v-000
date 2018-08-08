@@ -2,15 +2,15 @@
 
 def valid_move?(board, index)
 
-  new_index = index.to_i - 1
+  #new_index = index.to_i - 1
 
-  if 0 <= new_index && new_index <= 8
+  if 0 <= index && index <= 8
     within_index = true
   else
     within_index = false
   end
 
-  if position_taken?(board, new_index) == true
+  if position_taken?(board, index) == true
     occupied = true
   else
     occupied = false
@@ -24,8 +24,8 @@ def valid_move?(board, index)
 end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
-def position_taken?(board, new_index)
-  character = board[new_index]
+def position_taken?(board, index)
+  character = board[index]
   if character == "X" || character == "O"
     return true
   else
